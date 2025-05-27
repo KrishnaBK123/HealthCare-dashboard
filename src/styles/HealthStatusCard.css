@@ -83,7 +83,25 @@
 /* === Responsive Mobile Phones === */
 @media (max-width: 768px) {
   .health-status-container  {
-      /* width: 100%; */
-      max-width: 300px;
+    width: 100%;
+    max-width: 500px;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .health-status-container {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .health-card {
+    flex: 1 1 calc(50% - 10px);
+    max-width: 48%;
+    margin-bottom: 16px;
   }
 }
