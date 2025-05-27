@@ -65,7 +65,7 @@
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  border-radius: 50px;
+  border-radius: 10px;
   color: white;
   font-weight: 500;
   z-index: 3;

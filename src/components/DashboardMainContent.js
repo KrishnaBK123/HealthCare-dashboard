@@ -70,7 +70,7 @@ const DashboardMainContent = () => {
           <button className="menu-toggle" onClick={toggleSidebar}>
             <Menu size={24} />
           </button>
-          <button className="icon-btn">
+          <button className="icon-btnA">
             <Plus size={20} />
           </button>
         </div>
@@ -130,7 +130,7 @@ const DashboardMainContent = () => {
             <div className="emoji-avatar">
               <span role="img" aria-label="curly-hair">👩🏻‍🦱</span>
             </div>
-            <button className="icon-btn">
+            <button className="icon-btnA">
               <Plus size={20} />
             </button>
           </div>

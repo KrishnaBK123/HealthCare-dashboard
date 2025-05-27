@@ -130,11 +130,21 @@
 }
 
 .icon-btn {
-  background: #3734A9;
+  
   border: none;
-  border-radius: 50%;
+  border-radius: 10px;
   padding: 10px;
-  color: white;
+  color:#3734A9;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.icon-btnA{
+  background-color: #3734A9;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color:#ffffff;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
@@ -158,6 +168,7 @@
   flex-direction: column;
   padding: 0 24px;
 }
+
 
 @media (max-width: 1024px) {
   .dashboard-wrapper {
@@ -288,14 +299,25 @@
   }
 
   .icon-btn {
-    background: #3734A9;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
+  
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color:#3734A9;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.icon-btnA{
+  background-color: #3734A9;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color:#ffffff;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
 
   .emoji-avatar {
     background-color: #00e0e0;
