@@ -1,0 +1,155 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 200px;
+  padding: 16px 24px;
+  background-color: #fff;
+  gap: 16px;
+}
+
+/* Hide logo by default */
+.responsive-logo {
+  display: none;
+}
+
+/* Style for mobile top-left logo */
+@media (max-width: 768px) {
+  .responsive-logo {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    z-index: 1000;
+  }
+
+  .responsive-logo h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+
+  .responsive-logo .highlight {
+    color: #00d9b8;
+  }
+
+  .header {
+    padding-top: 48px; /* push down to make room for absolute logo */
+    position: relative;
+  }
+}
+
+
+  .header {
+    padding-top: 40px; /* to avoid overlapping with absolute logo */
+    position: relative;
+  }
+
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.search-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+ 
+}
+
+.search-input {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 580px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+}
+
+.search-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+
+
+/* Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #facc15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.add-btn,
+.notification-btn {
+  background-color: #3734A9;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column-reverse; /* 👈 Reverses the wrap order */
+    align-items: stretch;
+    gap: 12px;
+    margin-left: 0;
+  }
+
+  .header-left,
+  .header-right {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .search-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .search-input input {
+    width: 100%;
+  }
+
+  .add-btn,
+  .notification-btn {
+    padding: 10px;
+  }
+
+  .avatar {
+    margin-bottom: 0;
+  }
+}

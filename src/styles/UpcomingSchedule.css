@@ -1,0 +1,108 @@
+.schedule-container {
+  /* width: 100%; */
+  padding: 20px;
+  background-color: #f6faff;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+ font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.schedule-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #54518e; /* slate-800 */
+  margin-bottom: 8px;
+}
+
+.schedule-day {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.day-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280; /* slate-500 */
+}
+
+.appointments-row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 16px;
+}
+
+/* === Appointment Card === */
+.appointment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #e0e7ff;
+  padding: 14px 26px;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  flex-shrink: 0;
+  width: fit-content;
+  max-width: 250px;
+}
+
+/* Text on left, emoji on right */
+.appointment-content {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  margin-right: 8px;
+  gap: 6px; 
+}
+
+
+.appointment-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #33295B;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.appointment-time {
+  font-size: 13px;
+  color: #404160;
+  margin-top: 2px;
+}
+
+.appointment-icon {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .appointments-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .appointment-card {
+    /* width: 100%; */
+    max-width: none;
+  }
+
+  .schedule-container {
+    padding: 16px;
+    align-self: flex-start;
+  }
+
+  .schedule-title {
+    font-size: 18px;
+  }
+
+  .day-title {
+    font-size: 13px;
+  }
+}

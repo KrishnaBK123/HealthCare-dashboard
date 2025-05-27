@@ -1,0 +1,89 @@
+.health-status-container {
+  width: 100%;
+  max-width: 200px;
+  /* padding: 20px; */
+  border-radius: 16px;
+ 
+  
+}
+
+.health-card {
+  background-color: #F6FAFF;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}   
+
+.health-card:last-child {
+  margin-bottom: 0;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.organ-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.organ-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #424863;
+  margin: 0;
+}
+
+
+
+.date-text {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0 0 8px 0;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.progress-fill.red {
+  background-color: #ef4444;
+}
+
+.progress-fill.green {
+  background-color: #10b981;
+}
+
+.progress-fill.orange {
+  background-color: #f97316;
+}
+
+
+/* === Responsive Mobile Phones === */
+@media (max-width: 768px) {
+  .health-status-container  {
+      /* width: 100%; */
+      max-width: 300px;
+  }
+}
