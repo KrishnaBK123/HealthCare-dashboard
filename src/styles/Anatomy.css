@@ -278,17 +278,6 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .scanner-wrapper {
-    /* width: 100%; */
-    max-width: 700px;
-    margin: 0 auto;
-    background-color: #F6FAFF;
-    border-radius: 20px;
-    overflow: hidden;
-    padding: 20px;
-    margin-left: 80px;
-  }
-}
+
     
 
